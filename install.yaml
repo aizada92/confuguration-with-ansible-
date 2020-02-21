@@ -3,18 +3,18 @@
   hosts: all
   become: true
   become_method: sudo
-  connections: ssh
+  connection: ssh
   ignore_errors: false
   tasks:
     - name: Task Name Here
-      ping: 
-    - name: install telnet
+      ping:
+    - name: Install telnet
       package: 
-      name:
-        - telnet
-        - elinks
-        - wget
-        - unzip
-      state: present
+        name: 
+          - telnet
+          - elinks
+          - wget 
+          - unzip
+        state: present
               
       
