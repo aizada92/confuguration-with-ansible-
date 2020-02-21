@@ -3,9 +3,8 @@
   hosts: all
   become: true
   become_method: sudo
-  connections: ssh
+  connection: ssh
   ignore_errors: false
   tasks:
     - name: Task Name Here
       ping:
-      
