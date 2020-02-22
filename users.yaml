@@ -1,16 +1,30 @@
-- name: Create 1 user bob
-      user:
-        name: bob
-        generate_ssh_key: yes
-    - name: Create 1 user lisa
-      user:
-        name: lisa
-        generate_ssh_key: yes
-    - name: Create 1 user ben
-      user:
-        name: ben
-        generate_ssh_key: yes
-    - name: Create 1 user katty
-      user:
-        name: katty
-        generate_ssh_key: yes
+- name: Add the user 'bob' with a specific uid and a primary group of 'admin'
+  user:
+    name: bob
+    comment: bob
+    uid: 1040
+    group: admin
+
+ - name: Add the user 'lisa' with a specific uid and a primary group of 'admin'
+   user:
+     name: lisa
+     comment: lisa
+     uid: 1041
+     group: admin
+
+
+
+- name: Add the user 'bob' with a specific uid and a primary group of 'admin'
+  user:
+    name: ben
+    comment: ben
+    uid: 1042
+    group: admin
+
+
+- name: Add the user 'katty' with a specific uid and a primary group of 'admin'
+  user:
+    name: katty
+    comment: katty
+    uid: 1043
+    group: admin
