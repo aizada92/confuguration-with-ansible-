@@ -1,5 +1,5 @@
 ---
-- name: Creates route53 entry
+- name: Create route53 entry
   hosts: localhost
   tasks:
     - name: Route53 a record
