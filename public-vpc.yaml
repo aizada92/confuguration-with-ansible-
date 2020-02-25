@@ -8,7 +8,7 @@
         region: "{{region}}"
         filters:
           "tag:QA": VPC
-      register: TaskVPC2
+      register: VPC1
 
     - name: Create Public Subnet 1
       ec2_vpc_subnet:
