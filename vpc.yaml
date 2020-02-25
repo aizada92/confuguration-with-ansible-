@@ -1,9 +1,6 @@
 ---
 - name: Playbook for VPC
   hosts: localhost
-  gather_facts: no
-  vars_files:
-    - configurations/regions
   tasks:
     - name: VPC for class
       ec2_vpc_net:
