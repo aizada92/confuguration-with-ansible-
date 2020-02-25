@@ -15,7 +15,7 @@
     - name: Create Public Subnet 1
       ec2_vpc_subnet:
         state: present
-        vpc_id: "{{VPC1.vpc_id}}"
+        vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
         region: "{{region}}"
         cidr: "{{Public_cidr1}}"
         resource_tags:
