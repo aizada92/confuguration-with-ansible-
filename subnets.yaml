@@ -10,6 +10,11 @@
         tags:
           Class: Ansible
           Task: VPC
+    - name: Collect VPC info
+      ec2_vpc_net_facts:
+        region: "{{region}}"
+        filters:
+          "tag:Task": VPC
       register: VPC1
 
     - name: Create Public Subnet 1
