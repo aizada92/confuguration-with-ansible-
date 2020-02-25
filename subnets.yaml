@@ -10,7 +10,7 @@
         tags:
           Class: Ansible
           Task: VPC
-        register: VPC1
+      register: VPC1
 
 
     - name: Create Public Subnet 1
