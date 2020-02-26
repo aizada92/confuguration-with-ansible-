@@ -6,7 +6,7 @@
       ec2_group:
         name: SecGroup
         description: Sec Group 1
-        vpc_id: vpc-1471ad6e
+        vpc_id: vpc-0406f0c385c89934c
         region: us-east-1
         rules:
           - proto: tcp
