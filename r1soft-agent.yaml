@@ -15,6 +15,7 @@
       package:
         name: serverbackup-enterprise-agent 
         state: latest
+      notify: R1soft RESTART  
 
 
     - name: Power off iptables
@@ -28,7 +29,7 @@
       shell: r1soft-setup --get-key http://backup.theaizada.com
 
 
-
+  handlers:
     - name: Start R1soft Agent 
       systemd: 
         name: sbm-agent
