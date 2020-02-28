@@ -18,3 +18,6 @@
       path: "/home/{{username}}/.ssh/authorized_keys"
     # var:
     #   new_user_key: "{{ files | map(attribute='key') | list }}"
+
+
+    
